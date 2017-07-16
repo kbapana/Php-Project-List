@@ -1,6 +1,8 @@
 ## Popular PHP Repositories on GitHub 
 ---
+
 ###Assessment Details:
+
 > Popular PHP Repositories on GitHub Using PHP and MySQL, complete the following: 
 > * QUOTE Popular PHP Repositories on GitHub Using PHP and MySQL, complete the following: Use the GitHub API to retrieve the most starred public PHP projects. Store the list of repositories in a MySQL table. The table must contain the repository ID, name, URL, created date, last push date, description, and number of stars.
 > * This process should also be able to update existing project details. Using the data in the table created in step 1, create an interface that displays a list of the GitHub repositories and allows the user to click through to view details on each one. Be sure to include all of the fields in step 1 – displayed in either the list or detailed view.
@@ -11,7 +13,7 @@
 ### Requirements:
 >
 * Apache or NGINX web server
-* PHP 7.0 or newer
+* PHP 7.0
 * Bootstrap
 * Javascript
 
@@ -26,16 +28,17 @@
 --- 
  
  
-* ** Step 1 : CREATE DATABASE** 
+* **Step 1 : CREATE DATABASE** 
 
 ``` 
 CREATE DATABASE repositories;
 ```
+
 ```
 CREATE TABLE IF NOT EXISTS `repositories`.`repositories` ( `id` INT AUTO_INCREMENT , ` repository_id` VARCHAR(255) NOT NULL , ` repository_name` VARCHAR(255) NOT NULL , `repository_url` VARCHAR(255) NOT NULL , ` repository_created_date` VARCHAR(255) NOT NULL , `repository_last_push_date` VARCHAR(255) NOT NULL , ` repository_description` VARCHAR(255) NOT NULL , ` number_of_stars` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`) ) ENGINE = InnoDB;
  ```
 
-* ** Step 2 : Create Connection File**
+* **Step 2 : Create Connection File**
  
 ```
 $servername = "servaername"; 
@@ -47,6 +50,7 @@ $conn = new mysqli($servername, $username, $password,$database);
  if ($conn->connect_error) { die("Connection failed: " . $conn->connect_error);
  }
 ```
+
 * **Step3 : Store Data in DB** 
 Get the data from git hub Search api accoding to score or star or created date as you wish for only PHP Useful links from the GitHub API 
 documentation: 
