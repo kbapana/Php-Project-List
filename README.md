@@ -1,7 +1,7 @@
 ## Popular PHP Repositories on GitHub 
 ---
 
-###Assessment Details:
+### Assessment Details:
 
 > Popular PHP Repositories on GitHub Using PHP and MySQL, complete the following: 
 > * QUOTE Popular PHP Repositories on GitHub Using PHP and MySQL, complete the following: Use the GitHub API to retrieve the most starred public PHP projects. Store the list of repositories in a MySQL table. The table must contain the repository ID, name, URL, created date, last push date, description, and number of stars.
