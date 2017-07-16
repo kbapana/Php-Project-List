@@ -52,7 +52,7 @@ $conn = new mysqli($servername, $username, $password,$database);
 ```
 
 * **Step3 : Store Data in DB** 
-Get the data from git hub Search api accoding to score or star or created date as you wish for only PHP Useful links from the GitHub API 
+Get the data from git hub Search api according to score or star or created date as you wish for only PHP Useful links from the GitHub API 
 documentation: 
 [https://developer.github.com/v3/](https://developer.github.com/v3/) 
 [https://developer.github.com/v3/search/](https://developer.github.com/v3/search/) 
