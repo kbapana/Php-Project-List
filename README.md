@@ -57,7 +57,7 @@ OR
 
 
 ```
-require_once('databaseConnection.php');
+require_once('db.php');
  $opts = [ 'http' => [ 'method' => 'GET', 'header' => [ 'User-Agent: PHP' ] ] ]; 
 $context = stream_context_create($opts); 
 for ($k=1; $k <=10; $k++) { $data = file_get_contents("https://api.github.com/search/repositories?q=language:php&page='$k'&per_page=100", false, $context); 
@@ -92,7 +92,7 @@ mysqli_close($conn);
 * **Step 4 : Fetch Data From DB**
 
 ``` 
-require_once('databaseConnection.php'); 
+require_once('db.php'); 
 $repo="SELECT * FROM `repositories`";
 $repo_query=mysqli_query($conn,$repo);
 while($result=mysqli_fetch_assoc($repo_query)):
