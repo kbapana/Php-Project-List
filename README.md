@@ -11,7 +11,7 @@
 ### Requirements:
 >
 * Apache or NGINX web server
-* PHP 5.4.0 or newer
+* PHP 7.0 or newer
 * Bootstrap
 * Javascript
 
